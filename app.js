@@ -21,7 +21,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/pendrive', pendriveRouter);
 app.use('/blackView', BlackViewRouter);
-//for default view
+
+//for default view application should use this Router
 app.use('/', HomePageRouter);
 
 // catch 404 and forward to error handler
